@@ -26,8 +26,8 @@
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
-import { AllCountriesDocument } from "~/gql/queries/all-countries";
-import { useClientHandle } from "@urql/vue";
+import AllCountriesDocument from "@/pages/allCountries.gql";
+import { useQuery } from "@urql/vue";
 
 const code = ref("");
 
@@ -35,10 +35,7 @@ const variables = computed(() => {
   return code.value ? {filter: {code: {eq: code.value.toUpperCase()}}} : {}
 })
 
-const urql = useClientHandle();
-
-const { data, fetching } = await urql.useQuery({query: AllCountriesDocument, variables})
-
+const { data, fetching } = await useQuery({query: AllCountriesDocument, variables})
 
 /*
 import {useNuxtApp} from "#app";

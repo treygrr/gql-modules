@@ -1,5 +1,5 @@
 query allCountries($filter: CountryFilterInput) {
-    countries: countries(filter: $filter) {
+    countries(filter: $filter) {
         code
         name
         emoji
