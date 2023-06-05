@@ -36,7 +36,7 @@
     "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@typescript-eslint/parser": "^5.51.0",
     "@urql/exchange-graphcache": "^5.2.0",
-    "@urql/vue": "^1.0.4",
+    "@urql/vue": "^1.1.2",
     "@vue/eslint-config-typescript": "^11.0.2",
     "eslint": "^8.36.0",
     "eslint-plugin-vue": "^9.9.0",
