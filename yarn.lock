@@ -5,6 +5,18 @@ __metadata:
   version: 6
   cacheKey: 8
 
+"@0no-co/graphql.web@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@0no-co/graphql.web@npm:1.0.1"
+  peerDependencies:
+    graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
+  peerDependenciesMeta:
+    graphql:
+      optional: true
+  checksum: e577a80a210e48e0b054dcf363efa2107ab67b931ec923b1540300350f55576fc5493b6d4ca7f35379748d20bc0280ee32bdc98c2c2380476c814a472bcf0757
+  languageName: node
+  linkType: hard
+
 "@ampproject/remapping@npm:^2.1.0":
   version: 2.2.0
   resolution: "@ampproject/remapping@npm:2.2.0"
@@ -3192,14 +3204,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@urql/core@npm:^3.1.1":
-  version: 3.1.1
-  resolution: "@urql/core@npm:3.1.1"
+"@urql/core@npm:^4.0.0":
+  version: 4.0.10
+  resolution: "@urql/core@npm:4.0.10"
   dependencies:
-    wonka: ^6.1.2
-  peerDependencies:
-    graphql: ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
-  checksum: 8fa40d9d1e387ec50571f78df59beae7d0eb9f7f4297255ad1c1201e7fe45d8f8fc4d9ed23586b2ae25531e1c200dee7486d42ac120d8d258d420f22a947a612
+    "@0no-co/graphql.web": ^1.0.1
+    wonka: ^6.3.2
+  checksum: adeb666c632acbd85dbb6d48aab81b8ec26e839ff525b71a93e6d0cc1632bab49b4615585527ccc8b98fbf5c2e1a9f5c20bdd92d3f89d573803f069d97ea09eb
   languageName: node
   linkType: hard
 
@@ -3224,16 +3235,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@urql/vue@npm:^1.0.4":
-  version: 1.0.4
-  resolution: "@urql/vue@npm:1.0.4"
+"@urql/vue@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "@urql/vue@npm:1.1.2"
   dependencies:
-    "@urql/core": ^3.1.1
-    wonka: ^6.0.0
+    "@urql/core": ^4.0.0
+    wonka: ^6.3.2
   peerDependencies:
-    graphql: ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     vue: ^2.7.0 || ^3.0.0
-  checksum: 32d8b6b8a64b91438820f199de8c949fc755ecb1fb994624642e42cde8c11bf10417e80c2e3092a6296613acbee9545ae2654a58b3db8029ce2553b30493fa18
+  checksum: a49c365ba7073b3b1de27acc6d703a7d8c36324dfac43103b5c42b18312dbec3deceedbb8e49f1bd0212d9bd238346f6ddbd667130717450ec425a7964c63321
   languageName: node
   linkType: hard
 
@@ -8057,7 +8067,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^5.51.0
     "@typescript-eslint/parser": ^5.51.0
     "@urql/exchange-graphcache": ^5.2.0
-    "@urql/vue": ^1.0.4
+    "@urql/vue": ^1.1.2
     "@vue/eslint-config-typescript": ^11.0.2
     eslint: ^8.36.0
     eslint-plugin-vue: ^9.9.0
@@ -10673,6 +10683,13 @@ __metadata:
   version: 6.1.2
   resolution: "wonka@npm:6.1.2"
   checksum: 474dcffd3861faaf5df8f4ef1ea1e614eb0cf36f54003974ebd4ab43b8fd6aad26317ef75e55488e7a61d64922531ae3ca2890dac90922d46715e0dd795682ce
+  languageName: node
+  linkType: hard
+
+"wonka@npm:^6.3.2":
+  version: 6.3.2
+  resolution: "wonka@npm:6.3.2"
+  checksum: e161f377a4ea17cc2b19fe8820219a9e3e2c78db5df08b820525bc2cc261184823d1bc33bd2385e632656a9676c9de6ff614b6324c441dd5fc5faa253433d032
   languageName: node
   linkType: hard
 
